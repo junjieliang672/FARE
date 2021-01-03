@@ -15,8 +15,7 @@ def getTrain(flag,changeVisual,changeProp):
     dataDict = io.loadmat(f'data/{flag}_train.mat')
     trainX = dataDict['feature']
     trainy = dataDict['full_label'].reshape(-1)
-    if changeVisual:
-        trainSeeny = dataMask(trainy,True,changeVisual,changeProp)
+    trainSeeny = dataMask(trainy,True,changeVisual,changeProp)
     return trainX,trainy,trainSeeny
 
 
