@@ -10,6 +10,8 @@ For more details, please refer to our [paper](./ndss21.pdf).
 
 We only upload a subset of our data due to file size limit. The main code file is [FARE.py](./FARE.py). To run the code, simply type `python FARE.py`.
 
+Implementation of base clustering method DEC and other deep learning based clustering and anomaly detection methods: https://github.com/Henrygwb/UnsupervisedLearing.
+
 ## Data format
 
 In the `data` folder, we split the input data into three files. A file containing all training data (`malware_train.mat`), a file containing all testing data (`malware_test.mat`) and a file containing the clustering results output from the neighborhood models (`malware.npy`). The structures of the data file are as follows:
