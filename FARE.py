@@ -89,7 +89,7 @@ class ConstraintContrastiveLoss(nn.Module):
 def run(data_dic,param,seed):
     np.random.seed(seed)
     vis,prop = code4Relabel(data_dic['label_type'],data_dic['tot_class'],data_dic['mod_class'],data_dic['prop'],seed)
-    testX, testY = getTest(data_dic['flag'],vis,prop)
+    testX, testY = getTest(data_dic['flag'])
     trainX, trainY, trainSeeny = getTrain(data_dic['flag'],vis,prop)
     cluster_label = getClusterLabel(data_dic['flag'],data_dic['selected_clusters'])
 
